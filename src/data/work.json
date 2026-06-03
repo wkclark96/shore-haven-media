@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "cat": "Brand Identity",
+      "client": "Restaurant Group",
+      "desc": "Repositioned a multi-unit restaurant group around a distinct culinary identity, driving regional recognition and earned media coverage.",
+      "stat": "+240%",
+      "label": "Brand Recognition",
+      "img": ""
+    },
+    {
+      "cat": "Paid Media",
+      "client": "E-Commerce Brand",
+      "desc": "Built and scaled Meta ad campaigns from zero, establishing consistent ROAS and profitable acquisition channels within 60 days.",
+      "stat": "3.2×",
+      "label": "Return on Ad Spend",
+      "img": ""
+    },
+    {
+      "cat": "Social Strategy",
+      "client": "Boutique Hotel",
+      "desc": "Developed a content and community strategy that transformed dormant social channels into a primary booking driver.",
+      "stat": "+180%",
+      "label": "Organic Reach",
+      "img": ""
+    }
+  ]
+}

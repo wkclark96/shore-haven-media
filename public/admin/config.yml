@@ -1,0 +1,55 @@
+backend:
+  name: github
+  repo: wkclark96/shore-haven-media   # your GitHub repo
+  branch: main
+  base_url: https://www.shorehavenmedia.com       # ← replace with your live Netlify URL
+  auth_endpoint: /.netlify/functions/auth
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "content"
+    label: "Site Content"
+    files:
+      - label: "Homepage Sections"
+        name: "site"
+        file: "src/data/site.json"
+        fields:
+          - { label: "Hero Tagline",       name: "hero_tagline",     widget: "string" }
+          - { label: "Book — Eyebrow",     name: "book_eyebrow",     widget: "string" }
+          - { label: "Book — Heading",     name: "book_heading",     widget: "string" }
+          - { label: "Book — Text",        name: "book_text",        widget: "text" }
+          - { label: "Calendly URL",       name: "calendly_url",     widget: "string", hint: "Paste your full Calendly link, e.g. https://calendly.com/yourname/discovery" }
+          - { label: "Contact — Eyebrow",  name: "contact_eyebrow",  widget: "string" }
+          - { label: "Contact — Heading",  name: "contact_heading",  widget: "string" }
+          - { label: "Contact — Text",     name: "contact_text",     widget: "text" }
+
+      - label: "Services"
+        name: "services"
+        file: "src/data/services.json"
+        fields:
+          - { label: "Section Eyebrow", name: "eyebrow", widget: "string", hint: "Small label above the heading" }
+          - { label: "Section Heading", name: "heading", widget: "string" }
+          - label: "Services"
+            name: "items"
+            widget: "list"
+            hint: "Numbering (01, 02…) is automatic — just reorder or add/remove"
+            fields:
+              - { label: "Title",       name: "title", widget: "string" }
+              - { label: "Description", name: "desc",  widget: "text" }
+
+      - label: "Portfolio"
+        name: "work-items"
+        file: "src/data/work.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Category",    name: "cat",    widget: "string", hint: "e.g. Brand Identity" }
+              - { label: "Client",      name: "client", widget: "string", hint: "e.g. Restaurant Group" }
+              - { label: "Description", name: "desc",   widget: "text" }
+              - { label: "Stat",        name: "stat",   widget: "string", hint: "e.g. +240% or 3.2×" }
+              - { label: "Stat Label",  name: "label",  widget: "string", hint: "e.g. Brand Recognition" }
+              - { label: "Image",       name: "img",    widget: "image",  required: false, hint: "Optional cover image" }

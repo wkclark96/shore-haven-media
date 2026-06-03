@@ -1,0 +1,13 @@
+{
+  "eyebrow": "What We Do",
+  "heading": "Our Services",
+  "items": [
+    { "title": "Brand Strategy & Positioning", "desc": "Build a brand that stands for something. We craft clear, compelling positioning that distinguishes you and resonates deeply with the right audience." },
+    { "title": "Customer Research & Alignment", "desc": "Deep-dive insights that connect your marketing to real customer needs, behaviors, and motivations — so every message lands." },
+    { "title": "Social Media", "desc": "Consistent, on-brand presence that builds community, drives engagement, and keeps your brand top of mind across every platform." },
+    { "title": "Content Creation", "desc": "Compelling content that tells your story across every format — written, visual, and video — crafted to convert and resonate." },
+    { "title": "Meta Ads", "desc": "Performance-driven campaigns on Facebook and Instagram, built to scale and deliver measurable return on every dollar spent." },
+    { "title": "Growth Strategy", "desc": "Data-informed roadmaps that identify your biggest levers and put a concrete, executable plan behind each one." },
+    { "title": "Full Stack Marketing", "desc": "End-to-end marketing ownership — strategy through execution — so you can focus on running your business while we navigate your growth." }
+  ]
+}
