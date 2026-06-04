@@ -54,3 +54,11 @@ collections:
               - { label: "Stat Label",  name: "label",  widget: "string", hint: "e.g. Brand Recognition" }
               - { label: "Image",       name: "img",    widget: "image",  required: false, hint: "Optional cover image" }
               - { label: "Image Alt Text", name: "alt", widget: "string", required: false, hint: "Describe the image for screen readers & SEO, e.g. 'Restaurant dining room at dusk'. Leave blank if the image is purely decorative." }
+
+      - label: "Privacy Policy"
+        name: "privacy"
+        file: "src/data/privacy.json"
+        fields:
+          - { label: "Page Title",   name: "title",   widget: "string" }
+          - { label: "Last Updated", name: "updated", widget: "string", hint: "e.g. June 2026 — shown under the title" }
+          - { label: "Policy Text",  name: "body",    widget: "markdown", hint: "Use ## for section headings. Have a lawyer review before relying on it." }

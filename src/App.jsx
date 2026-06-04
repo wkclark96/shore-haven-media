@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import siteData from "./data/site.json";
 import servicesData from "./data/services.json";
 import workData from "./data/work.json";
+import PrivacyPage from "./PrivacyPage.jsx";
 
 /* ─── CONTENT (from CMS) ─────────────────────────────────────────── */
 const SITE = siteData;
@@ -152,6 +153,8 @@ const CSS = `
 
 /* ─── APP ────────────────────────────────────────────────────────── */
 export default function App() {
+  const path = typeof window !== "undefined" ? window.location.pathname.replace(/\/+$/, "") : "";
+  if (path === "/privacy") return <PrivacyPage />;
   const [scrolled, setScrolled] = useState(false);
   const f1 = useFade(0);
   const f2 = useFade(80);
@@ -425,6 +428,7 @@ export default function App() {
         </p>
         <div style={{ display: "flex", gap: "28px" }}>
           {NAV.map(([id, lbl]) => <span key={id} className="nl" onClick={() => go(id)} style={{ fontSize: "11px" }}>{lbl}</span>)}
+          <a href="/privacy" className="nl" style={{ fontSize: "11px" }}>Privacy</a>
         </div>
       </footer>
     </>
