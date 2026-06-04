@@ -2,7 +2,7 @@ backend:
   name: github
   repo: wkclark96/shore-haven-media   # your GitHub repo
   branch: main
-  base_url: https://www.shorehavenmedia.com       # ← replace with your live Netlify URL
+  base_url: https://YOUR_SITE.netlify.app        # ← replace with your live Netlify URL
   auth_endpoint: /.netlify/functions/auth
 
 media_folder: "public/images"
@@ -53,3 +53,4 @@ collections:
               - { label: "Stat",        name: "stat",   widget: "string", hint: "e.g. +240% or 3.2×" }
               - { label: "Stat Label",  name: "label",  widget: "string", hint: "e.g. Brand Recognition" }
               - { label: "Image",       name: "img",    widget: "image",  required: false, hint: "Optional cover image" }
+              - { label: "Image Alt Text", name: "alt", widget: "string", required: false, hint: "Describe the image for screen readers & SEO, e.g. 'Restaurant dining room at dusk'. Leave blank if the image is purely decorative." }

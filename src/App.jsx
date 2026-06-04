@@ -81,7 +81,7 @@ function ContactForm() {
   };
 
   const inp = {
-    background: "rgba(244,247,250,0.04)", border: "1px solid rgba(244,247,250,0.12)",
+    background: "rgba(244,247,250,0.04)", border: "1px solid rgba(244,247,250,0.40)",
     borderRadius: "2px", color: WHITE, fontFamily: "'Raleway',sans-serif",
     fontWeight: 300, fontSize: "14px", letterSpacing: "0.4px",
     padding: "14px 18px", outline: "none", width: "100%", boxSizing: "border-box",
